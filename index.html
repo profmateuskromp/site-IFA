@@ -1,40 +1,205 @@
-<section id="prototipos">
-    <h2>Registro dos Protótipos</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Portfólio de Robótica e Programação</title>
+    <style>
+        /* Estilos embutidos para facilitar a visualização imediata */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+        .introducao {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        .card-prototipo {
+            background: #fff;
+            border-left: 5px solid #1abc9c;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        .card-prototipo h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        .midia-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .midia-item {
+            flex: 1;
+            min-width: 280px;
+            background: #eaeaea;
+            border-radius: 6px;
+            padding: 10px;
+            text-align: center;
+        }
+        .midia-item img, .midia-item video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        .midia-item p {
+            font-size: 0.9em;
+            color: #666;
+            margin: 5px 0 0 0;
+        }
+        .codigo-container {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
 
-    <!-- Bloco de Registro 1 -->
-    <div class="card-prototipo">
-        <h3>Protótipo 1: Sensor de presença</h3>
-        
-        <!-- Anotações -->
-        <p class="descricao"><strong>Anotações:</strong> [Descreva aqui o que o protótipo faz, os materiais usados e os aprendizados do teste].</p>
-        
-        <!-- Mídia: Fotos e Vídeos -->
-        <div class="midia-prototipo">
-            <!-- Para Foto -->
-            <img src="caminho-da-sua-foto.jpg" alt="Foto do Protótipo 1" class="img-registro">
-            
-            <!-- Para Vídeo Local -->
-            <video controls class="video-registro">
-                <source src="caminho-do-seu-video.mp4" type="video/mp4">
-                Seu navegador não suporta a tag de vídeo.
-            </video>
-        </div>
+    <header>
+        <h1>Diário de Bordo: Componente de Programação</h1>
+        <p>Grupo 3 - Inovação e Tecnologia Escolar</p>
+    </header>
 
-        <!-- Códigos de Programação -->
-        <div class="codigo-prototipo">
-            <h4>Código Utilizado:</h4>
-            <pre><code>
-// Cole o seu código de programação aqui (ex: Arduino, Python, JS)
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#prototipos">Nossos Protótipos</a>
+        <a href="#sobre">Sobre o Grupo</a>
+    </nav>
+
+    <main>
+        <!-- Introdução simulando os alunos -->
+        <section id="inicio" class="introducao">
+            <h2>Bem-vindos ao nosso site de registros!</h2>
+            <p>Criamos esta página durante as aulas de Programação para documentar a evolução dos nossos projetos e protótipos de robótica. Aqui você vai encontrar nossas anotações de testes, registros em fotos e vídeos, além dos códigos que desenvolvemos para fazer as ideias funcionarem na prática.</p>
+        </section>
+
+        <!-- Seção de Protótipos simulando os alunos -->
+        <section id="prototipos">
+            <h2>🚀 Registro dos Protótipos</h2>
+
+            <!-- Registro do Protótipo 1 -->
+            <div class="card-prototipo">
+                <h3>Protótipo 1: Lixeira Automatizada com Sensor</h3>
+                
+                <!-- Anotações dos alunos -->
+                <p><strong>Anotações do Grupo:</strong> No dia 14/05, montamos a primeira versão do nosso protótipo utilizando uma lixeira de plástico pequena, um servo motor e um sensor ultrassônico. O objetivo do projeto é fazer com que a tampa abra sozinha quando alguém aproximar a mão a menos de 15 centímetros, evitando o contato direto e melhorando a higiene na escola.</p>
+                <p><strong>Resultado dos Testes:</strong> Nos primeiros testes, a tampa abria muito rápido e batia com força. Ajustamos o ângulo do servo motor no código de 180 para 90 graus e resolveu o problema. O sensor funcionou perfeitamente detectando a aproximação.</p>
+                
+                <!-- Galeria de Mídias (Fotos e Vídeos) -->
+                <h4>📸 Evidências do Projeto</h4>
+                <div class="midia-container">
+                    <!-- Simulação de Foto -->
+                    <div class="midia-item">
+                        <img src="foto_lixeira_prototipo.jpg" alt="Foto do circuito da lixeira montado na bancada">
+                        <p>Circuito montado na placa de ensaio (Protoboard)</p>
+                    </div>
+                    
+                    <!-- Simulação de Vídeo -->
+                    <div class="midia-item">
+                        <video controls>
+                            <source src="video_teste_lixeira.mp4" type="video/mp4">
+                            Seu navegador não suporta a tag de vídeo.
+                        </video>
+                        <p>Vídeo demonstrativo do teste de abertura da tampa</p>
+                    </div>
+                </div>
+
+                <!-- Código de Programação -->
+                <h4>💻 Código Fonte (Arduino C++)</h4>
+                <p>Este foi o código que escrevemos e testamos no Arduino Uno para controlar o sensor e o motor:</p>
+                <div class="codigo-container">
+<pre><code>
+#include &lt;Servo.h&gt;
+
+Servo meuServo;
+const int trigPin = 9;
+const int echoPin = 10;
+long duracao;
+int distancia;
+
 void setup() {
-  pinMode(13, OUTPUT);
+  meuServo.attach(11);
+  pinMode(trigPin, OUTPUT);
+  pinMode(echoPin, INPUT);
+  meuServo.write(0); // Garante que a lixeira começa fechada
 }
+
 void loop() {
-  digitalWrite(13, HIGH);
-  delay(1000);
-  digitalWrite(13, LOW);
-  delay(1000);
+  // Limpa o trigPin
+  digitalWrite(trigPin, LOW);
+  delayMicroseconds(2);
+  
+  // Ativa o sensor por 10 microssegundos
+  digitalWrite(trigPin, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trigPin, LOW);
+  
+  // Calcula a distância
+  duracao = pulseIn(echoPin, HIGH);
+  distancia = duracao * 0.034 / 2;
+  
+  // Se a mão estiver a menos de 15cm, abre a lixeira
+  if (distancia < 15) {
+    meuServo.write(90); // Abre a tampa
+    delay(4000);        // Mantém aberta por 4 segundos
+  } else {
+    meuServo.write(0);  // Fecha a tampa
+  }
+  delay(100);
 }
-            </code></pre>
-        </div>
-    </div>
-</section>
+</code></pre>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido com ❤️ pela Turma do Ensino Médio / Técnico</p>
+    </footer>
+
+</body>
+</html>
