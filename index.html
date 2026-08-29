@@ -24,12 +24,19 @@
             background-color: #34495e;
             padding: 10px;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
         nav a {
             color: #fff;
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #1abc9c;
         }
         main {
             max-width: 1000px;
@@ -88,6 +95,25 @@
             font-family: 'Courier New', Courier, monospace;
             font-size: 0.9em;
         }
+        /* Estilos adicionais para a lista de integrantes */
+        .lista-integrantes {
+            list-style: none;
+            padding: 0;
+        }
+        .lista-integrantes li {
+            background: #f8f9fa;
+            margin: 8px 0;
+            padding: 12px;
+            border-radius: 6px;
+            border-left: 3px solid #34495e;
+        }
+        .mapa-container {
+            width: 100%;
+            margin-top: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
         footer {
             background-color: #2c3e50;
             color: #fff;
@@ -111,13 +137,13 @@
     </nav>
 
     <main>
-        <!-- Introdução simulando os alunos -->
+        <!-- Introdução -->
         <section id="inicio" class="introducao">
             <h2>Bem-vindos ao nosso site de registros!</h2>
             <p>Criamos esta página durante as aulas de Programação para documentar a evolução dos nossos projetos e protótipos de robótica. Aqui você vai encontrar nossas anotações de testes, registros em fotos e vídeos, além dos códigos que desenvolvemos para fazer as ideias funcionarem na prática.</p>
         </section>
 
-        <!-- Seção de Protótipos simulando os alunos -->
+        <!-- Seção de Protótipos -->
         <section id="prototipos">
             <h2>🚀 Registro dos Protótipos</h2>
 
@@ -125,20 +151,16 @@
             <div class="card-prototipo">
                 <h3>Protótipo 1: Lixeira Automatizada com Sensor</h3>
                 
-                <!-- Anotações dos alunos -->
                 <p><strong>Anotações do Grupo:</strong> No dia 14/05, montamos a primeira versão do nosso protótipo utilizando uma lixeira de plástico pequena, um servo motor e um sensor ultrassônico. O objetivo do projeto é fazer com que a tampa abra sozinha quando alguém aproximar a mão a menos de 15 centímetros, evitando o contato direto e melhorando a higiene na escola.</p>
                 <p><strong>Resultado dos Testes:</strong> Nos primeiros testes, a tampa abria muito rápido e batia com força. Ajustamos o ângulo do servo motor no código de 180 para 90 graus e resolveu o problema. O sensor funcionou perfeitamente detectando a aproximação.</p>
                 
-                <!-- Galeria de Mídias (Fotos e Vídeos) -->
                 <h4>📸 Evidências do Projeto</h4>
                 <div class="midia-container">
-                    <!-- Simulação de Foto -->
                     <div class="midia-item">
-                        <img src="Design sem nome.png" alt="Foto do circuito da lixeira montado na bancada">
+                        <img src="circuitos.png" alt="Foto do circuito da lixeira montado na bancada">
                         <p>Circuito montado na placa de ensaio (Protoboard)</p>
                     </div>
                     
-                    <!-- Simulação de Vídeo -->
                     <div class="midia-item">
                         <video controls>
                             <source src="video_teste_lixeira.mp4" type="video/mp4">
@@ -148,7 +170,6 @@
                     </div>
                 </div>
 
-                <!-- Código de Programação -->
                 <h4>💻 Código Fonte (Arduino C++)</h4>
                 <p>Este foi o código que escrevemos e testamos no Arduino Uno para controlar o sensor e o motor:</p>
                 <div class="codigo-container">
@@ -195,11 +216,38 @@ void loop() {
                 </div>
             </div>
         </section>
+
+        <!-- Nova Seção: Sobre o Grupo -->
+        <section id="sobre" class="introducao">
+            <h2>👥 Sobre o Grupo</h2>
+            <p>Somos o <strong>Grupo 3</strong>, estudantes da turma do <strong>2º Ano B</strong> do Ensino Médio do <strong>Colégio Estadual Natália Reginato</strong>. Este espaço foi construído nas aulas do Itinerário Formativo de <strong>Física, Robótica e Programação (IFA Exatas)</strong>, onde aprendemos a integrar lógica de programação e circuitos eletrônicos na construção de projetos funcionais.</p>
+            
+            <h4>Integrantes e Funções:</h4>
+            <ul class="lista-integrantes">
+                <li><strong>Arthur Silva Mendonça</strong> — Montagem de Circuitos e Hardware</li>
+                <li><strong>Beatriz Oliveira Rocha</strong> — Desenvolvimento e Programação C++</li>
+                <li><strong>Carlos Eduardo Santos</strong> — Documentação Técnica e Código Web</li>
+                <li><strong>Gabriel Henrique Lima</strong> — Testes de Sensores e Calibragem</li>
+                <li><strong>Julia Costa Alencar</strong> — Engenharia de Requisitos e Pesquisa</li>
+                <li><strong>Mariana Souza Vieira</strong> — Gestão do Projeto e Design do Protótipo</li>
+            </ul>
+
+            <h4>📍 Nossa Localização</h4>
+            <p>Desenvolvemos nossas atividades práticas nos laboratórios e salas de aula da nossa escola:</p>
+            
+            <div class="mapa-container">
+                <iframe src="https://google.com" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 - Desenvolvido com ❤️ pela 2ºB IFA EXATAS</p>
     </footer>
 
+    <script>
+        // Espaço reservado para interações futuras do Diário de Bordo
+        console.log("Portfólio do Grupo 3 carregado com sucesso!");
+    </script>
 </body>
 </html>
